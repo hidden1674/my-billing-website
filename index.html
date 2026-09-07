@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Billing System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header>
+<h1>BHAGWAN SINGH & COMPANY</h1>
+<p>Billing & Inventory Management</p>
+</header>
+<nav>
+<button class="nav-btn active" data-tab="dashboard">DASHBOARD</button>
+<button class="nav-btn" data-tab="bill">NEW BILL</button>
+<button class="nav-btn" data-tab="stock">STOCK</button>
+<button class="nav-btn" data-tab="history">BILL HISTORY</button>
+<button class="nav-btn" data-tab="expense">EXPENSE</button>
+<button class="nav-btn" data-tab="addmoney">ADD MONEY</button>
+<button class="nav-btn reset-btn" onclick="resetAllData()">RESET ALL DATA</button>
+</nav>
+<main>
+<section id="dashboard" class="tab-page active"></section>
+<section id="bill" class="tab-page"></section>
+<section id="stock" class="tab-page"></section>
+<section id="history" class="tab-page"></section>
+<section id="expense" class="tab-page"></section>
+<section id="addmoney" class="tab-page"></section>7
+</main>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
